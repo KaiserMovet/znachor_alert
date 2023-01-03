@@ -47,7 +47,6 @@ def add_wykop_entry(api, entry) -> None:
 
 
 def main() -> None:
-    print(sys.argv[1], "*",sys.argv[2], "*",sys.argv[3], "*")
     em = get_emmissions()
     msg = generate_wykop_entry(em)
     api = get_wykop()
