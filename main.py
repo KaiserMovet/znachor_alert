@@ -37,7 +37,7 @@ def generate_wykop_entry(emissions) -> str:
         "Jeśli coś nie działa jak powinno "
         "(zła godzina, coś zostało pominięte, etc.) "
         "dawajcie znać w komentarzach albo pw. Dzięki\n"
-        "https://github.com/KaiserMovet/znachor_alert"
+        "https://github.com/KaiserMovet/znachor_alert\n"
         "#znachor #znachoralert"
     )
     return f"{header}\n{entry}\n{footer}"
