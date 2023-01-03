@@ -36,10 +36,11 @@ def generate_wykop_entry(emissions) -> str:
     footer = (
         "\n===\n"
         "Jestem Botem przypominającym o emisjach Znachora w ciągu "
-        "najbliższych 5 dni. Wpis będzie tworzony raz na 4 dni.\n"
+        "najbliższych 5 dni. Wpis będzie tworzony raz na 4 dni lub szybciej (pewnie szybciej xd).\n"
         "Jeśli coś nie działa jak powinno "
         "(zła godzina, coś zostało pominięte, etc.) "
         "dawajcie znać w komentarzach albo pw. Dzięki\n"
+        "https://github.com/KaiserMovet/znachor_alert\n"
         "#znachor #znachoralert"
     )
     return f"{header}\n{entry}\n{footer}"
