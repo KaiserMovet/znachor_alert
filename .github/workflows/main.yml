@@ -2,6 +2,7 @@ name: Run Znachor Alert
 on:
   schedule:
     - cron: 0 10 */3 * *
+  workflow_dispatch:
 jobs:
   znachor:
     runs-on: python-latest
