@@ -1,0 +1,10 @@
+name: Run Znachor Alert
+on:
+  schedule:
+    - cron: 0 10 */3 * *
+jobs:
+  znachor:
+    runs-on: python-latest
+    steps:
+      - run: python3 -m pip install -r requirements.txt
+      - run: python3 main.py
