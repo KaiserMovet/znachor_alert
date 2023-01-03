@@ -25,7 +25,7 @@ def generate_wykop_entry(emissions) -> str:
     if not emissions:
         entry += f"W ciągu najbliższych 5 dni nie odbędzie się żadna emisja Znachora :c\n"
     else:
-        entry += f"W ciągu najbliższych 5 dni znachora będziemy mogli obejrzeć {len(emissions)} razy: \n"
+        entry += f"W ciągu najbliższych 5 dni znachora będziemy mogli obejrzeć {len(emissions)} razy:\n"
         entry += "\n".join([em.msg for em in emissions])
         entry += "\n"
 
@@ -33,7 +33,7 @@ def generate_wykop_entry(emissions) -> str:
     footer = (
         "\n===\n"
         "Jestem Botem przypominającym o emisjach Znachora w ciągu "
-        "najbliższych 5 dni. Wpis będzie tworzony raz na 3 dni.\n "
+        "najbliższych 5 dni. Wpis będzie tworzony raz na 4 dni.\n"
         "Jeśli coś nie działa jak powinno "
         "(zła godzina, coś zostało pominięte, etc.) "
         "dawajcie znać w komentarzach albo pw. Dzięki\n"
@@ -43,7 +43,8 @@ def generate_wykop_entry(emissions) -> str:
 
 
 def add_wykop_entry(api, entry) -> None:
-    api.entry_add(entry, Pictures.get_picture())
+    res = api.entry_add(entry, Pictures.get_picture())
+    print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
 def main() -> None:

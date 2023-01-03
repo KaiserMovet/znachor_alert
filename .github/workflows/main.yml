@@ -1,7 +1,7 @@
 name: Run Znachor Alert
 on:
   schedule:
-    - cron: 0 10 */3 * *
+    - cron: 0 10 */4 * *
   workflow_dispatch:
 jobs:
   znachor:
