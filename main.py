@@ -1,9 +1,11 @@
 import datetime
+import json
 import sys
+from typing import List
 
 import wykop
 
-from app import EPG, TVParser
+from app import EPG, Emission, TVParser
 from app.pictures import Pictures
 
 
@@ -21,7 +23,8 @@ def get_emmissions():
     return tv_parser.get_all_elements("Znachor")
 
 
-def generate_wykop_entry(emissions) -> str:
+def generate_wykop_entry(emissions: List[Emission]) -> str:
+    em = [e for e in emissions if not e.already_took_place()]
     dates_str = ""
     dates_str = f"({datetime.datetime.now().strftime('%d.%m')} - {(datetime.datetime.now()+datetime.timedelta(days=4)).strftime('%d.%m')})"
     entry = ""
@@ -51,8 +54,26 @@ def add_wykop_entry(api, entry) -> None:
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
+def add_emissions_to_history(emissions: List[Emission]) -> None:
+    with open("history.json", "r") as f:
+        data = json.load(f)
+    if not data:
+        data = []
+    current_id = [em["id"] for em in data]
+
+    for em in emissions:
+        em_dict = em.to_dict()
+        if not em_dict["id"] in current_id:
+            data.append(em_dict)
+
+    data.sort(key=lambda x: x["start"])
+    with open("history.json", "w") as f:
+        f.write(json.dumps(data))
+
+
 def main() -> None:
     em = get_emmissions()
+    add_emissions_to_history(em)
     msg = generate_wykop_entry(em)
     api = get_wykop()
     add_wykop_entry(api, msg)

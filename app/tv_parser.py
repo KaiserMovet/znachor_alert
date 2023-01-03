@@ -1,4 +1,6 @@
 import datetime
+import hashlib
+from functools import cache
 from typing import List
 from xml.etree import ElementTree
 
@@ -87,12 +89,30 @@ class Emission:
     def __repr__(self) -> str:
         return f"< Emission {self.title} {self.channel} {self.start} >"
 
+    def __hash__(self) -> int:
+        return int(
+            hashlib.md5(
+                (f"{self.title} {self.channel} {self.start}").encode()
+            ).hexdigest(),
+            16,
+        )
+
+    def to_dict(self) -> dict:
+        return {
+            "title": self.title,
+            "channel": self.channel,
+            "start": self.start.timestamp(),
+            "stop": self.stop.timestamp(),
+            "id": hash(self),
+        }
+
 
 class TVParser:
     def __init__(self, tv: ElementTree.Element):
         self.tv = tv
 
-    def get_all_elements(self, title: str):
+    @cache
+    def get_all_elements(self, title: str) -> list[Emission]:
         res = self.tv.findall(f".//*[.='{title}']/..")
         emissions: List[Emission] = []
         for re in res:
@@ -103,7 +123,6 @@ class TVParser:
                 stop=re.get("stop"),
                 default_timedelta=datetime.timedelta(hours=2, minutes=8),
             )
-            if not em.already_took_place():
-                emissions.append(em)
+            emissions.append(em)
         emissions.sort(key=lambda x: x.start)
         return emissions
