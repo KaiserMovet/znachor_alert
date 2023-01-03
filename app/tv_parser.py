@@ -40,11 +40,12 @@ class Translate:
 
 
 class Emission:
-    def __init__(self, title, channel, start, stop):
+    def __init__(self, title, channel, start, stop, default_timedelta=None):
         self.title = title
         self.channel = channel
         self.start = datetime.datetime.strptime(start, "%Y%m%d%H%M%S %z")
         self.stop = datetime.datetime.strptime(stop, "%Y%m%d%H%M%S %z")
+        self.timedelta = default_timedelta
 
     @staticmethod
     def _get_readable_date(date) -> str:
@@ -68,8 +69,20 @@ class Emission:
         return self._get_readable_date(self.stop)
 
     @property
+    def advert_len(self) -> datetime.timedelta | None:
+        if self.timedelta:
+            return (self.stop - self.start) - self.timedelta
+        return None
+
+    @property
     def msg(self) -> str:
-        return f"{self.channel} -> {self.start_readable} - {self.stop_readable.split()[-1]}"
+        msg = f"{self.channel} -> {self.start_readable} - {self.stop_readable.split()[-1]}"
+        td = self.advert_len
+        if td and td > datetime.timedelta(minutes=15):
+            # Remove 15 minutes
+            td = td - datetime.timedelta(minutes=15)
+            msg += f" (minimum {((td).total_seconds() // 60):.0f} minut reklam)"
+        return msg
 
     def __repr__(self) -> str:
         return f"< Emission {self.title} {self.channel} {self.start} >"
@@ -88,6 +101,7 @@ class TVParser:
                 channel=re.get("channel"),
                 start=re.get("start"),
                 stop=re.get("stop"),
+                default_timedelta=datetime.timedelta(hours=2, minutes=8),
             )
             if not em.already_took_place():
                 emissions.append(em)

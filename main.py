@@ -1,3 +1,4 @@
+import datetime
 import sys
 
 import wykop
@@ -21,11 +22,13 @@ def get_emmissions():
 
 
 def generate_wykop_entry(emissions) -> str:
+    dates_str = ""
+    dates_str = f"({datetime.datetime.now().strftime('%d.%m')} - {(datetime.datetime.now()+datetime.timedelta(days=4)).strftime('%d.%m')})"
     entry = ""
     if not emissions:
-        entry += f"W ciągu najbliższych 5 dni nie odbędzie się żadna emisja Znachora :c\n"
+        entry += f"W ciągu najbliższych 5 dni {dates_str} nie odbędzie się żadna emisja Znachora :c\n"
     else:
-        entry += f"W ciągu najbliższych 5 dni znachora będziemy mogli obejrzeć {len(emissions)} razy:\n"
+        entry += f"W ciągu najbliższych 5 dni {dates_str} znachora będziemy mogli obejrzeć {len(emissions)} razy:\n"
         entry += "\n".join([em.msg for em in emissions])
         entry += "\n"
 
