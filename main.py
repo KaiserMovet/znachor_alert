@@ -23,8 +23,8 @@ def get_emmissions():
     return tv_parser.get_all_elements("Znachor")
 
 
-def generate_wykop_entry(emissions: List[Emission]) -> str:
-    em = [e for e in emissions if not e.already_took_place()]
+def generate_wykop_entry(emissions: List[Emission], counter: int) -> str:
+    emissions = [e for e in emissions if not e.already_took_place()]
     dates_str = ""
     dates_str = f"({datetime.datetime.now().strftime('%d.%m')} - {(datetime.datetime.now()+datetime.timedelta(days=4)).strftime('%d.%m')})"
     entry = ""
@@ -35,7 +35,7 @@ def generate_wykop_entry(emissions: List[Emission]) -> str:
         entry += "\n".join([em.msg for em in emissions])
         entry += "\n"
 
-    header = "=== ZNACHOR ALERT!!! ===\n"
+    header = f"=== ZNACHOR ALERT!!! {counter}/∞ ===\n"
     footer = (
         "\n===\n"
         "Jestem Botem przypominającym o emisjach Znachora w ciągu "
@@ -56,7 +56,8 @@ def add_wykop_entry(api, entry) -> None:
 
 def add_emissions_to_history(emissions: List[Emission]) -> None:
     with open("history.json", "r") as f:
-        data = json.load(f)
+        full_data = json.load(f)
+    data = full_data.get("emissions", [])
     if not data:
         data = []
     current_id = [em["id"] for em in data]
@@ -67,16 +68,30 @@ def add_emissions_to_history(emissions: List[Emission]) -> None:
             data.append(em_dict)
 
     data.sort(key=lambda x: x["start"])
+    full_data["emissions"] = data
     with open("history.json", "w") as f:
-        f.write(json.dumps(data))
+        f.write(json.dumps(full_data, indent=4))
+
+
+def get_counter() -> int:
+    with open("history.json", "r") as f:
+        full_data = json.load(f)
+    counter = full_data.get("counter", 0)
+    counter += 1
+    full_data["counter"] = counter
+    with open("history.json", "w") as f:
+        f.write(json.dumps(full_data, indent=4))
+    return counter
 
 
 def main() -> None:
     em = get_emmissions()
     add_emissions_to_history(em)
-    msg = generate_wykop_entry(em)
+    counter = get_counter()
+    msg = generate_wykop_entry(em, counter)
     api = get_wykop()
-    add_wykop_entry(api, msg)
+    # add_wykop_entry(api, msg)
+    print(msg)
 
 
 if __name__ == "__main__":
