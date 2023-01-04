@@ -2,7 +2,7 @@ import random
 
 
 class Pictures:
-    AMOUNT = 4
+    AMOUNT = 5
     PATH = "pictures"
 
     @classmethod
