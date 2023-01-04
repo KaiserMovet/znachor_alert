@@ -90,7 +90,7 @@ def main() -> None:
     counter = get_counter()
     msg = generate_wykop_entry(em, counter)
     api = get_wykop()
-    add_wykop_entry(api, msg)
+    # add_wykop_entry(api, msg)
     print(msg)
 
 
