@@ -9,7 +9,7 @@ from app import EPG, Emission, TVParser
 from app.pictures import Pictures
 
 
-def get_wykop():
+def get_wykop() -> wykop.WykopAPI:
     api = wykop.WykopAPI(
         sys.argv[1],
         sys.argv[2],
@@ -39,7 +39,7 @@ def generate_wykop_entry(emissions: List[Emission], counter: int) -> str:
     footer = (
         "\n===\n"
         "Jestem Botem przypominającym o emisjach Znachora w ciągu "
-        "najbliższych 5 dni. Wpis będzie tworzony raz na 4 dni lub szybciej (pewnie szybciej xd).\n"
+        "najbliższych 5 dni. Wpis będzie tworzony w co 4 dzień każdego miesiąca, jeśli odbywa się jakaś emisja.\n"
         "Jeśli coś nie działa jak powinno "
         "(zła godzina, coś zostało pominięte, etc.) "
         "dawajcie znać w komentarzach albo pw. Dzięki\n"
@@ -86,12 +86,15 @@ def get_counter() -> int:
 
 def main() -> None:
     em = get_emmissions()
-    add_emissions_to_history(em)
-    counter = get_counter()
-    msg = generate_wykop_entry(em, counter)
-    api = get_wykop()
-    add_wykop_entry(api, msg)
-    print(msg)
+    if em:
+        add_emissions_to_history(em)
+        counter = get_counter()
+        msg = generate_wykop_entry(em, counter)
+        api = get_wykop()
+        add_wykop_entry(api, msg)
+        print(msg)
+    else:
+        print("No emmissions")
 
 
 if __name__ == "__main__":
