@@ -83,7 +83,7 @@ class Emission:
         if td and td > datetime.timedelta(minutes=15):
             # Remove 15 minutes
             td = td - datetime.timedelta(minutes=15)
-            msg += f" (minimum {((td).total_seconds() // 60):.0f} minut reklam)"
+            msg += f" (min {((td).total_seconds() // 60):.0f} minut reklam)"
         return msg
 
     def __repr__(self) -> str:
