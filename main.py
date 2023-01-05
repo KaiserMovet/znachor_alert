@@ -39,7 +39,7 @@ def generate_wykop_entry(emissions: List[Emission], counter: int) -> str:
     footer = (
         "\n===\n"
         "Jestem Botem przypominającym o emisjach Znachora w ciągu "
-        "najbliższych 5 dni. Wpis będzie tworzony w co 4 dzień każdego miesiąca, jeśli odbywa się jakaś emisja.\n"
+        "najbliższych 5 dni. Wpis będzie tworzony w co 4 dzień każdego miesiąca (1, 5, 9 itd.), jeśli odbywa się jakaś emisja.\n"
         "Jeśli coś nie działa jak powinno "
         "(zła godzina, coś zostało pominięte, etc.) "
         "dawajcie znać w komentarzach albo pw. Dzięki\n"
