@@ -14,12 +14,12 @@ jobs:
         with:
           python-version: 3.11 #install the python needed
       - run: python -m pip install -r requirements.txt
-      - run: python main.py ${{ secrets.APPKEY }} ${{ secrets.SECRETKEY }} ${{ secrets.CONNECTIONKEY }}
+      - run: python main.py --app-key ${{ secrets.APPKEY }} --secret-key ${{ secrets.SECRETKEY }} --account-key ${{ secrets.CONNECTIONKEY }}
       - name: Commit history file
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
           # Default: '.'
-          add: 'history.json'
+          add: "history.json"
           author_name: Kaiser Bot
-          message: 'Update history.json file'
+          message: "Update history.json file"
