@@ -1,6 +1,7 @@
 import datetime
 import json
 import sys
+from pprint import pprint
 from typing import List
 
 import wykop
@@ -24,7 +25,6 @@ def get_emmissions():
 
 
 def generate_wykop_entry(emissions: List[Emission], counter: int) -> str:
-    emissions = [e for e in emissions if not e.already_took_place()]
     dates_str = ""
     dates_str = f"({datetime.datetime.now().strftime('%d.%m')} - {(datetime.datetime.now()+datetime.timedelta(days=4)).strftime('%d.%m')})"
     entry = ""
@@ -86,15 +86,17 @@ def get_counter() -> int:
 
 def main() -> None:
     em = get_emmissions()
-    if em:
-        add_emissions_to_history(em)
+    pprint(em)
+    future_em = [e for e in em if not e.already_took_place()]
+    add_emissions_to_history(em)
+    if future_em:
         counter = get_counter()
-        msg = generate_wykop_entry(em, counter)
+        msg = generate_wykop_entry(future_em, counter)
         api = get_wykop()
         add_wykop_entry(api, msg)
         print(msg)
     else:
-        print("No emmissions")
+        print("No future emmissions")
 
 
 if __name__ == "__main__":
