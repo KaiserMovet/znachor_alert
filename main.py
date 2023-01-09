@@ -1,5 +1,4 @@
 import argparse
-import datetime
 import json
 from pprint import pprint
 from typing import List
