@@ -73,15 +73,15 @@ def get_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--app-key",
-        help="Wykop App key. Can be ignore, if --demo is set",
+        help="Wykop App key. Can be ignored, if --demo is set",
     )
     parser.add_argument(
         "--secret-key",
-        help="Wykop secret key. Can be ignore, if --demo is set",
+        help="Wykop secret key. Can be ignored, if --demo is set",
     )
     parser.add_argument(
         "--account-key",
-        help="Wykop user account key. Can be ignore, if --demo is set",
+        help="Wykop user account key. Can be ignored, if --demo is set",
     )
     args = parser.parse_args()
     return args
