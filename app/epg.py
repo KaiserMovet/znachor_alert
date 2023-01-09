@@ -27,7 +27,7 @@ class EPG:
     @classmethod
     def _download_data_if_needed(cls, file_name: str) -> None:
         if not os.path.exists(file_name):
-            resposne = requests.get(cls.URL)
+            resposne = requests.get(cls.URL, timeout=15)
             with open(file_name, "wb") as f:
                 f.write(resposne.content)
 

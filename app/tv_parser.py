@@ -42,7 +42,9 @@ class Translate:
 
 
 class Emission:
-    def __init__(self, title, channel, start, stop, default_timedelta=None):
+    def __init__(
+        self, title, channel, start, stop, default_timedelta=None
+    ) -> None:
         self.title = title
         self.channel = channel
         self.start = datetime.datetime.strptime(start, "%Y%m%d%H%M%S %z")
@@ -78,12 +80,15 @@ class Emission:
 
     @property
     def msg(self) -> str:
-        msg = f"{self.channel} -> {self.start_readable} - {self.stop_readable.split()[-1]}"
-        td = self.advert_len
-        if td and td > datetime.timedelta(minutes=15):
+        msg = (
+            f"{self.channel} -> {self.start_readable} - "
+            f"{self.stop_readable.split()[-1]}"
+        )
+        advert_len = self.advert_len
+        if advert_len and advert_len > datetime.timedelta(minutes=15):
             # Remove 15 minutes
-            td = td - datetime.timedelta(minutes=15)
-            msg += f" ({((td).total_seconds() // 60):.0f} min reklam)"
+            advert_len = advert_len - datetime.timedelta(minutes=15)
+            msg += f" ({((advert_len).total_seconds() // 60):.0f} min reklam)"
         return msg
 
     def __repr__(self) -> str:
@@ -111,7 +116,7 @@ class TVParser:
     def __init__(self, tv: ElementTree.Element):
         self.tv = tv
 
-    @cache
+    @cache  # pylint: disable=method-cache-max-size-none
     def get_all_elements(self, title: str) -> list[Emission]:
         res = self.tv.findall(f".//*[.='{title}']/..")
         emissions: List[Emission] = []
