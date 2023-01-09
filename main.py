@@ -6,7 +6,7 @@ from typing import List
 
 import wykop
 
-from app import EPG, Emission, TVParser
+from app import EPG, Emission, Entry, TVParser
 from app.pictures import Pictures
 
 
@@ -132,7 +132,7 @@ def main() -> None:
     add_emissions_to_history(em)
     if future_em:
         counter = get_counter(increment=not args.demo)
-        msg = generate_wykop_entry(future_em, counter)
+        msg = Entry(future_em, counter).get_msg()
         print(msg)
         if not args.demo:
             api = get_wykop(
