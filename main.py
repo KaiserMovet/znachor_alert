@@ -24,42 +24,6 @@ def get_emmissions() -> list[Emission]:
     return tv_parser.get_all_elements("Znachor")
 
 
-def generate_wykop_entry(emissions: List[Emission], counter: int) -> str:
-    dates_str = ""
-    now = datetime.datetime.now()
-    dates_str = (
-        f"({now.strftime('%d.%m')} - "
-        f"{(now+datetime.timedelta(days=4)).strftime('%d.%m')})"
-    )
-    entry = ""
-    if not emissions:
-        entry += (
-            f"W ciągu najbliższych 5 dni {dates_str} nie odbędzie się "
-            "żadna emisja Znachora :c\n"
-        )
-    else:
-        entry += (
-            f"W ciągu najbliższych 5 dni {dates_str} znachora będziemy "
-            "mogli obejrzeć {len(emissions)} razy:\n"
-        )
-        entry += "\n".join([em.msg for em in emissions])
-        entry += "\n"
-
-    header = f"=== ZNACHOR ALERT!!! {counter}/∞ ===\n"
-    footer = (
-        "\n===\n"
-        "Jestem Botem przypominającym o emisjach Znachora w ciągu "
-        "najbliższych 5 dni. Wpis będzie tworzony w co 4 dzień każdego "
-        "miesiąca (1, 5, 9 itd.), jeśli odbywa się jakaś emisja.\n"
-        "Jeśli coś nie działa jak powinno "
-        "(zła godzina, coś zostało pominięte, etc.) "
-        "dawajcie znać w komentarzach albo pw. Dzięki\n"
-        "https://github.com/KaiserMovet/znachor_alert\n"
-        "#znachor #znachoralert"
-    )
-    return f"{header}\n{entry}\n{footer}"
-
-
 def add_wykop_entry(api, entry) -> None:
     res = api.entry_add(entry, Pictures.get_picture())
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
