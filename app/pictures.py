@@ -14,4 +14,4 @@ class Pictures:
     @classmethod
     def get_picture(cls) -> BufferedReader:
         picture_path = random.choice(cls.get_files())
-        return open(f"{picture_path}", "rb")
+        return open(f"{cls.PATH}/{picture_path}", "rb")
