@@ -6,6 +6,8 @@ from xml.etree import ElementTree
 
 import pytz
 
+from .movie import Movie
+
 
 class Translate:
     weekdays = {
@@ -43,13 +45,16 @@ class Translate:
 
 class Emission:
     def __init__(
-        self, title, channel, start, stop, default_timedelta=None
+        self,
+        movie: Movie,
+        channel: str,
+        start: str,
+        stop: str,
     ) -> None:
-        self.title = title
+        self.movie = movie
         self.channel = channel
         self.start = datetime.datetime.strptime(start, "%Y%m%d%H%M%S %z")
         self.stop = datetime.datetime.strptime(stop, "%Y%m%d%H%M%S %z")
-        self.timedelta = default_timedelta
 
     @staticmethod
     def _get_readable_date(date) -> str:
@@ -74,9 +79,7 @@ class Emission:
 
     @property
     def advert_len(self) -> datetime.timedelta | None:
-        if self.timedelta:
-            return (self.stop - self.start) - self.timedelta
-        return None
+        return (self.stop - self.start) - self.movie.length
 
     @property
     def msg(self) -> str:
@@ -92,19 +95,19 @@ class Emission:
         return msg
 
     def __repr__(self) -> str:
-        return f"< Emission {self.title} {self.channel} {self.start} >"
+        return f"< Emission {self.movie.title} {self.channel} {self.start} >"
 
     def __hash__(self) -> int:
         return int(
             hashlib.md5(
-                (f"{self.title} {self.channel} {self.start}").encode()
+                (f"{self.movie.title} {self.channel} {self.start}").encode()
             ).hexdigest(),
             16,
         )
 
     def to_dict(self) -> dict:
         return {
-            "title": self.title,
+            "title": self.movie.title,
             "channel": self.channel,
             "start": self.start.timestamp(),
             "stop": self.stop.timestamp(),
@@ -113,20 +116,19 @@ class Emission:
 
 
 class TVParser:
-    def __init__(self, tv: ElementTree.Element):
+    def __init__(self, tv: ElementTree.Element) -> None:
         self.tv = tv
 
     @cache  # pylint: disable=method-cache-max-size-none
-    def get_all_elements(self, title: str) -> list[Emission]:
-        res = self.tv.findall(f".//*[.='{title}']/..")
+    def get_all_elements(self, movie: Movie) -> list[Emission]:
+        res = self.tv.findall(f".//*[.='{movie.title}']/..")
         emissions: List[Emission] = []
         for re in res:
             em = Emission(
-                title=title,
-                channel=re.get("channel"),
-                start=re.get("start"),
-                stop=re.get("stop"),
-                default_timedelta=datetime.timedelta(hours=2, minutes=8),
+                movie=movie,
+                channel=re.get("channel"),  # type: ignore
+                start=re.get("start"),  # type: ignore
+                stop=re.get("stop"),  # type: ignore
             )
             emissions.append(em)
         emissions.sort(key=lambda x: x.start)

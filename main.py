@@ -1,11 +1,12 @@
 import argparse
+import datetime
 import json
 from pprint import pprint
 from typing import List
 
 import wykop
 
-from app import EPG, Emission, Entry, TVParser
+from app import EPG, Emission, Entry, Movie, TVParser
 from app.pictures import Pictures
 
 
@@ -18,9 +19,9 @@ def get_wykop(app_key, secret_key, account_key) -> wykop.WykopAPI:
     return api
 
 
-def get_emmissions() -> list[Emission]:
+def get_emmissions(movie: Movie) -> list[Emission]:
     tv_parser = TVParser(EPG().tree)
-    return tv_parser.get_all_elements("Znachor")
+    return tv_parser.get_all_elements(movie)
 
 
 def add_wykop_entry(api, entry) -> None:
@@ -71,25 +72,34 @@ def get_args() -> argparse.Namespace:
         help="Entry will be generated, but not published on Wykop.pl",
         action="store_true",
     )
-    parser.add_argument(
+    app_key = parser.add_argument(
         "--app-key",
         help="Wykop App key. Can be ignored, if --demo is set",
     )
-    parser.add_argument(
+    secret_key = parser.add_argument(
         "--secret-key",
         help="Wykop secret key. Can be ignored, if --demo is set",
     )
-    parser.add_argument(
+    account_key = parser.add_argument(
         "--account-key",
         help="Wykop user account key. Can be ignored, if --demo is set",
     )
     args = parser.parse_args()
+    if not args.demo:
+        if args.app_key is None:
+            raise argparse.ArgumentError(app_key, "Need to be specified")
+        if args.secret_key is None:
+            raise argparse.ArgumentError(secret_key, "Need to be specified")
+        if args.account_key is None:
+            raise argparse.ArgumentError(account_key, "Need to be specified")
+
     return args
 
 
 def main() -> None:
+    movie = Movie("Znachor", datetime.timedelta(hours=2, minutes=8))
     args = get_args()
-    em = get_emmissions()
+    em = get_emmissions(movie)
     pprint(em)
     future_em = [e for e in em if not e.already_took_place()]
     add_emissions_to_history(em)
