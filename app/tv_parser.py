@@ -124,6 +124,13 @@ class TVParser:
         res = self.tv.findall(f".//*[.='{movie.title}']/..")
         emissions: List[Emission] = []
         for re in res:
+            year = None
+            try:
+                year = int(re.find(".//date").text)  # type: ignore
+            except Exception:  # pylint: disable=broad-except
+                pass
+            if year != movie.year:
+                continue
             em = Emission(
                 movie=movie,
                 channel=re.get("channel"),  # type: ignore

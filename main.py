@@ -97,7 +97,7 @@ def get_args() -> argparse.Namespace:
 
 
 def main() -> None:
-    movie = Movie("Znachor", datetime.timedelta(hours=2, minutes=8))
+    movie = Movie("Znachor", datetime.timedelta(hours=2, minutes=8), year=1981)
     args = get_args()
     em = get_emmissions(movie)
     pprint(em)

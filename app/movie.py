@@ -6,3 +6,4 @@ from datetime import timedelta
 class Movie:
     title: str
     length: timedelta
+    year: int
