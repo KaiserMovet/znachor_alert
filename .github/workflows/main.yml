@@ -14,7 +14,13 @@ jobs:
         with:
           python-version: 3.11 #install the python needed
       - run: python -m pip install -r requirements.txt
-      - run: python main.py --app-key ${{ secrets.APPKEY }} --secret-key ${{ secrets.SECRETKEY }} --account-key ${{ secrets.CONNECTIONKEY }}
+      - name: Run script
+        uses: nick-fields/retry@v2
+        with:
+          command: python main.py --app-key ${{ secrets.APPKEY }} --secret-key ${{ secrets.SECRETKEY }} --account-key ${{ secrets.CONNECTIONKEY }}
+          max_attempts: 3
+          retry_on: error
+          timeout_seconds: 300
       - name: Commit history file
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
