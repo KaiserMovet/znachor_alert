@@ -83,12 +83,24 @@ class Emission:
 
     @property
     def msg(self) -> str:
+        """
+        Generate message.
+        If advert len in less than 15 minutes or greater than 120 minuts,
+        advert message will not be shown.
+
+        Returns:
+            str: msg
+        """
         msg = (
             f"{self.channel} -> {self.start_readable} - "
             f"{self.stop_readable.split()[-1]}"
         )
         advert_len = self.advert_len
-        if advert_len and advert_len > datetime.timedelta(minutes=15):
+        if (
+            advert_len
+            and advert_len > datetime.timedelta(minutes=15)
+            and advert_len <= datetime.timedelta(minutes=120)
+        ):
             # Remove 15 minutes
             advert_len = advert_len - datetime.timedelta(minutes=15)
             msg += f" ({((advert_len).total_seconds() // 60):.0f} min reklam)"
