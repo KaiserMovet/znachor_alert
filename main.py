@@ -4,18 +4,13 @@ import json
 from pprint import pprint
 from typing import List
 
-import wykop
-
 from app import EPG, Emission, Entry, Movie, TVParser
 from app.pictures import Pictures
+from app.pywykop3 import WykopAPI
 
 
-def get_wykop(app_key, secret_key, account_key) -> wykop.WykopAPI:
-    api = wykop.WykopAPI(
-        app_key,
-        secret_key,
-    )
-    api.authenticate(account_key)
+def get_wykop(token: str) -> WykopAPI:
+    api = WykopAPI(refresh_token=token)
     return api
 
 
@@ -25,7 +20,8 @@ def get_emmissions(movie: Movie) -> list[Emission]:
 
 
 def add_wykop_entry(api, entry) -> None:
-    res = api.entry_add(entry, Pictures.get_picture())
+    # TODO add picture
+    res = api.post_entries(entry)
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
@@ -72,26 +68,15 @@ def get_args() -> argparse.Namespace:
         help="Entry will be generated, but not published on Wykop.pl",
         action="store_true",
     )
-    app_key = parser.add_argument(
-        "--app-key",
-        help="Wykop App key. Can be ignored, if --demo is set",
+    token = parser.add_argument(
+        "--token",
+        help="Wykop token. Can be ignored, if --demo is set",
     )
-    secret_key = parser.add_argument(
-        "--secret-key",
-        help="Wykop secret key. Can be ignored, if --demo is set",
-    )
-    account_key = parser.add_argument(
-        "--account-key",
-        help="Wykop user account key. Can be ignored, if --demo is set",
-    )
+
     args = parser.parse_args()
     if not args.demo:
-        if args.app_key is None:
-            raise argparse.ArgumentError(app_key, "Need to be specified")
-        if args.secret_key is None:
-            raise argparse.ArgumentError(secret_key, "Need to be specified")
-        if args.account_key is None:
-            raise argparse.ArgumentError(account_key, "Need to be specified")
+        if args.token is None:
+            raise argparse.ArgumentError(token, "Need to be specified")
 
     return args
 
@@ -108,11 +93,7 @@ def main() -> None:
         msg = Entry(future_em, counter).get_msg()
         print(msg)
         if not args.demo:
-            api = get_wykop(
-                app_key=args.app_key,
-                secret_key=args.secret_key,
-                account_key=args.account_key,
-            )
+            api = get_wykop(args.token)
             add_wykop_entry(api, msg)
     else:
         print("No future emmissions")
