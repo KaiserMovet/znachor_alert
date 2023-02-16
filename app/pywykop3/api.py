@@ -371,7 +371,7 @@ class WykopAPI:
             Dict: Dodany wpis
         """
 
-        endpoint = "/entries"
+        endpoint = "entries"
         data: Dict[str, str | int | None] = NotEmptyDict()
         data["content"] = content
         data["photo"] = photo

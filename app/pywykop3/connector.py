@@ -112,11 +112,12 @@ class WykopConnector:
         res = requests.request(
             method=method,
             url=url,
-            data={"data": data} if data else None,
+            json={"data": data} if data else None,
             params=params,
             headers=self.header,
             timeout=timeout,
         )
+
         res_json = res.json()
         res_data = res_json.get("data", []) if res_json else []
         res_error = res_json.get("error", {}) if res_json else {}
