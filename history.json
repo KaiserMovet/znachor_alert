@@ -216,7 +216,21 @@
             "start": 1679736000.0,
             "stop": 1679746200.0,
             "id": 1122747148021090313
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1679834100.0,
+            "stop": 1679843400.0,
+            "id": 1851928554026484835
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1680120000.0,
+            "stop": 1680129900.0,
+            "id": 42067639246450913
         }
     ],
-    "counter": 14
+    "counter": 15
 }
