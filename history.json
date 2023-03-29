@@ -213,9 +213,23 @@
         {
             "title": "Znachor",
             "channel": "Kino TV",
+            "start": 1679732400.0,
+            "stop": 1679742600.0,
+            "id": 1474930109260410627
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
             "start": 1679736000.0,
             "stop": 1679746200.0,
             "id": 1122747148021090313
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1679830500.0,
+            "stop": 1679839800.0,
+            "id": 327890042271722784
         },
         {
             "title": "Znachor",
@@ -230,7 +244,28 @@
             "start": 1680120000.0,
             "stop": 1680129900.0,
             "id": 42067639246450913
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1680349800.0,
+            "stop": 1680360000.0,
+            "id": 2041096858054945849
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1680458400.0,
+            "stop": 1680468300.0,
+            "id": 2064453412054818903
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1680463200.0,
+            "stop": 1680471600.0,
+            "id": 395256682561499182
         }
     ],
-    "counter": 15
+    "counter": 16
 }
