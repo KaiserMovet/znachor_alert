@@ -265,7 +265,21 @@
             "start": 1680463200.0,
             "stop": 1680471600.0,
             "id": 395256682561499182
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia 2",
+            "start": 1680467400.0,
+            "stop": 1680474900.0,
+            "id": 1006725005789326428
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1680643800.0,
+            "stop": 1680651600.0,
+            "id": 752161281323895929
         }
     ],
-    "counter": 16
+    "counter": 17
 }
