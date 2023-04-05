@@ -279,7 +279,63 @@
             "start": 1680643800.0,
             "stop": 1680651600.0,
             "id": 752161281323895929
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1680890400.0,
+            "stop": 1680899400.0,
+            "id": 686171674257789500
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1680909000.0,
+            "stop": 1680917400.0,
+            "id": 130466353921702472
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1680942000.0,
+            "stop": 1680950400.0,
+            "id": 385623276143623636
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1680967800.0,
+            "stop": 1680976800.0,
+            "id": 160556287793969598
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1680972900.0,
+            "stop": 1680981300.0,
+            "id": 2156671127954081634
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1681035600.0,
+            "stop": 1681044000.0,
+            "id": 1870277891632418208
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1681054200.0,
+            "stop": 1681063200.0,
+            "id": 1341462946139749884
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1681056600.0,
+            "stop": 1681066200.0,
+            "id": 1610358697861077936
         }
     ],
-    "counter": 17
+    "counter": 18
 }
