@@ -335,7 +335,35 @@
             "start": 1681056600.0,
             "stop": 1681066200.0,
             "id": 1610358697861077936
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1681106400.0,
+            "stop": 1681116300.0,
+            "id": 918608481426327377
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP HD",
+            "start": 1681125000.0,
+            "stop": 1681133400.0,
+            "id": 609161113305568408
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1681127400.0,
+            "stop": 1681137600.0,
+            "id": 1569023630247959870
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1681149600.0,
+            "stop": 1681158900.0,
+            "id": 1039267762531944921
         }
     ],
-    "counter": 18
+    "counter": 19
 }
