@@ -363,7 +363,42 @@
             "start": 1681149600.0,
             "stop": 1681158900.0,
             "id": 1039267762531944921
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1681546800.0,
+            "stop": 1681557000.0,
+            "id": 163620247049774937
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1681572300.0,
+            "stop": 1681581600.0,
+            "id": 207976041770126110
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1681581600.0,
+            "stop": 1681590600.0,
+            "id": 646238400954035224
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1681646400.0,
+            "stop": 1681656600.0,
+            "id": 16236948826894246
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1681677900.0,
+            "stop": 1681686900.0,
+            "id": 914957409640190584
         }
     ],
-    "counter": 19
+    "counter": 20
 }
