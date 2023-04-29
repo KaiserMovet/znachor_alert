@@ -426,7 +426,35 @@
             "start": 1682445600.0,
             "stop": 1682454900.0,
             "id": 987729706122939402
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1682971200.0,
+            "stop": 1682980200.0,
+            "id": 1529808061122246871
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1683038700.0,
+            "stop": 1683048000.0,
+            "id": 1149590009616386229
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1683117900.0,
+            "stop": 1683128400.0,
+            "id": 943333971351543347
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Polonia",
+            "start": 1683127200.0,
+            "stop": 1683135000.0,
+            "id": 392295024821157673
         }
     ],
-    "counter": 23
+    "counter": 24
 }
