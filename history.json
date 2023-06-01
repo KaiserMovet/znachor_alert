@@ -520,11 +520,39 @@
         },
         {
             "title": "Znachor",
+            "channel": "TVC",
+            "start": 1685469600.0,
+            "stop": 1685478900.0,
+            "id": 961705503496892924
+        },
+        {
+            "title": "Znachor",
             "channel": "FILMAX",
             "start": 1685563500.0,
             "stop": 1685572800.0,
             "id": 1962049709146135291
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1685786100.0,
+            "stop": 1685796600.0,
+            "id": 1053085632104531561
+        },
+        {
+            "title": "Znachor",
+            "channel": "WP",
+            "start": 1685807700.0,
+            "stop": 1685817600.0,
+            "id": 2151120457046090471
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1685901600.0,
+            "stop": 1685911500.0,
+            "id": 2277826268873598777
         }
     ],
-    "counter": 32
+    "counter": 33
 }
