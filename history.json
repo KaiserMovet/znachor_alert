@@ -552,7 +552,35 @@
             "start": 1685901600.0,
             "stop": 1685911500.0,
             "id": 2277826268873598777
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1686218400.0,
+            "stop": 1686228600.0,
+            "id": 2143033910669531869
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1686238200.0,
+            "stop": 1686247200.0,
+            "id": 1960074746692586535
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1686252900.0,
+            "stop": 1686261000.0,
+            "id": 462076423157697884
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1686259800.0,
+            "stop": 1686268800.0,
+            "id": 1296713151542730778
         }
     ],
-    "counter": 33
+    "counter": 34
 }
