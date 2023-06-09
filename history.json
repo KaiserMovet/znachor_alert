@@ -563,6 +563,13 @@
         {
             "title": "Znachor",
             "channel": "TVC",
+            "start": 1686237900.0,
+            "stop": 1686247200.0,
+            "id": 188995480860090502
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
             "start": 1686238200.0,
             "stop": 1686247200.0,
             "id": 1960074746692586535
@@ -580,7 +587,35 @@
             "start": 1686259800.0,
             "stop": 1686268800.0,
             "id": 1296713151542730778
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1686438900.0,
+            "stop": 1686446700.0,
+            "id": 2191720484048822076
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1686466800.0,
+            "stop": 1686477300.0,
+            "id": 712158695185263881
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1686499200.0,
+            "stop": 1686508200.0,
+            "id": 408077018335531231
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1686506400.0,
+            "stop": 1686515700.0,
+            "id": 699177908875034781
         }
     ],
-    "counter": 34
+    "counter": 35
 }
