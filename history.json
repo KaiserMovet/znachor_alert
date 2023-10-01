@@ -821,11 +821,25 @@
         },
         {
             "title": "Znachor",
+            "channel": "Antena",
+            "start": 1696176300.0,
+            "stop": 1696186200.0,
+            "id": 2029190085880503637
+        },
+        {
+            "title": "Znachor",
             "channel": "TVC",
             "start": 1696183200.0,
             "stop": 1696193400.0,
             "id": 2180324478321865928
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1696534800.0,
+            "stop": 1696542600.0,
+            "id": 1871077289331374750
         }
     ],
-    "counter": 53
+    "counter": 54
 }
