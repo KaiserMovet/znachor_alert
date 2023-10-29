@@ -902,7 +902,49 @@
             "start": 1698606000.0,
             "stop": 1698615900.0,
             "id": 1474794352520939070
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1698794700.0,
+            "stop": 1698803100.0,
+            "id": 920363069899710420
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1698839100.0,
+            "stop": 1698849300.0,
+            "id": 1574505151887442955
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1698839700.0,
+            "stop": 1698849900.0,
+            "id": 1162569843594903882
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1698845700.0,
+            "stop": 1698854400.0,
+            "id": 145238874800189105
+        },
+        {
+            "title": "Znachor",
+            "channel": "WP",
+            "start": 1698857700.0,
+            "stop": 1698868200.0,
+            "id": 339620248226244399
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1698858600.0,
+            "stop": 1698867300.0,
+            "id": 526136412796337659
         }
     ],
-    "counter": 58
+    "counter": 59
 }
