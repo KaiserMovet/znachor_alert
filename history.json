@@ -1021,7 +1021,63 @@
             "start": 1701524700.0,
             "stop": 1701535200.0,
             "id": 476551859802191493
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1703348700.0,
+            "stop": 1703358000.0,
+            "id": 474088945190624393
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Polonia",
+            "start": 1703363100.0,
+            "stop": 1703370600.0,
+            "id": 2138009498063115942
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1703403000.0,
+            "stop": 1703412000.0,
+            "id": 1948430604604266865
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1703435100.0,
+            "stop": 1703444400.0,
+            "id": 1292456742925018952
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Polonia",
+            "start": 1703466600.0,
+            "stop": 1703474700.0,
+            "id": 1935410291442356344
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP HD",
+            "start": 1703504100.0,
+            "stop": 1703512200.0,
+            "id": 831824409082888338
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1703508900.0,
+            "stop": 1703519100.0,
+            "id": 1521017193233982858
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1703530800.0,
+            "stop": 1703539800.0,
+            "id": 1507072963280363259
         }
     ],
-    "counter": 67
+    "counter": 68
 }
