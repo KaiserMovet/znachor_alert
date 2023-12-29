@@ -1038,6 +1038,13 @@
         },
         {
             "title": "Znachor",
+            "channel": "TVP Info",
+            "start": 1703363100.0,
+            "stop": 1703370600.0,
+            "id": 1671005836119404494
+        },
+        {
+            "title": "Znachor",
             "channel": "TVP Kobieta",
             "start": 1703403000.0,
             "stop": 1703412000.0,
@@ -1126,7 +1133,35 @@
             "start": 1703837100.0,
             "stop": 1703847300.0,
             "id": 2221427659621133103
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1703936700.0,
+            "stop": 1703947200.0,
+            "id": 1584566353376669192
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1704101100.0,
+            "stop": 1704111300.0,
+            "id": 693900729656888286
+        },
+        {
+            "title": "Znachor",
+            "channel": "WP",
+            "start": 1704115800.0,
+            "stop": 1704125400.0,
+            "id": 1792971179387633464
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1704128400.0,
+            "stop": 1704136500.0,
+            "id": 785337332026952280
         }
     ],
-    "counter": 69
+    "counter": 70
 }
