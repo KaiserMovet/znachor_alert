@@ -1207,6 +1207,13 @@
         {
             "title": "Znachor",
             "channel": "Antena",
+            "start": 1706128800.0,
+            "stop": 1706138100.0,
+            "id": 879144483146032143
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
             "start": 1706129100.0,
             "stop": 1706138100.0,
             "id": 489864498916734307
