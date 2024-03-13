@@ -1294,7 +1294,35 @@
             "start": 1710110700.0,
             "stop": 1710119100.0,
             "id": 487351875714636945
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1710545400.0,
+            "stop": 1710554100.0,
+            "id": 708838557878159481
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1710589500.0,
+            "stop": 1710600000.0,
+            "id": 1309457953239813178
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1710672300.0,
+            "stop": 1710681000.0,
+            "id": 1626267136755979411
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1710692700.0,
+            "stop": 1710701700.0,
+            "id": 1907853243437205943
         }
     ],
-    "counter": 81
+    "counter": 82
 }
