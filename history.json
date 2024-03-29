@@ -1350,7 +1350,70 @@
             "start": 1711738800.0,
             "stop": 1711748100.0,
             "id": 565012724303942104
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1711825200.0,
+            "stop": 1711835100.0,
+            "id": 2041796828183199788
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1711872600.0,
+            "stop": 1711882800.0,
+            "id": 826077248461998290
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1711902300.0,
+            "stop": 1711911600.0,
+            "id": 1976969087838289570
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1711908000.0,
+            "stop": 1711917900.0,
+            "id": 1526449915530574561
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1711959600.0,
+            "stop": 1711969500.0,
+            "id": 912717524176347440
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1711965900.0,
+            "stop": 1711976400.0,
+            "id": 1580647718165866077
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1711974300.0,
+            "stop": 1711982700.0,
+            "id": 939166275092217037
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1711977900.0,
+            "stop": 1711987200.0,
+            "id": 253716767198652581
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1711989000.0,
+            "stop": 1711998000.0,
+            "id": 266016551520496915
         }
     ],
-    "counter": 85
+    "counter": 86
 }
