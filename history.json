@@ -1361,9 +1361,23 @@
         {
             "title": "Znachor",
             "channel": "Stopklatka TV",
+            "start": 1711869000.0,
+            "stop": 1711879200.0,
+            "id": 1564896652932961640
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
             "start": 1711872600.0,
             "stop": 1711882800.0,
             "id": 826077248461998290
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1711898700.0,
+            "stop": 1711908000.0,
+            "id": 1586890582213459749
         },
         {
             "title": "Znachor",
@@ -1378,6 +1392,13 @@
             "start": 1711908000.0,
             "stop": 1711917900.0,
             "id": 1526449915530574561
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1711956000.0,
+            "stop": 1711965900.0,
+            "id": 1916863651278284220
         },
         {
             "title": "Znachor",
@@ -1410,10 +1431,24 @@
         {
             "title": "Znachor",
             "channel": "TVC",
+            "start": 1711985100.0,
+            "stop": 1711994400.0,
+            "id": 1285182521938599373
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
             "start": 1711989000.0,
             "stop": 1711998000.0,
             "id": 266016551520496915
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1712301900.0,
+            "stop": 1712311200.0,
+            "id": 678752405860823957
         }
     ],
-    "counter": 86
+    "counter": 87
 }
