@@ -51,7 +51,7 @@ class Entry:
     def _body(self) -> str:
         inner_msg = random.choice(
             [
-                "Twój stary dowie się, że to jest profesor Rafał Wilczór"
+                "Twój stary dowie się, że to jest profesor Rafał Wilczór",
                 "Sonia zostanie odrzucona",
                 "Leszek wyjebie się na motorze",
                 "Kosiba połamie Norkowi nogi",
