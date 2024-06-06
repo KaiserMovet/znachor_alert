@@ -1,25 +1,25 @@
-name: Run Znachor Alert
-on:
-  schedule:
-    - cron: 0 8 */4 * *
-  workflow_dispatch:
-jobs:
-  znachor:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner.
-      - name: setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.11 #install the python needed
-      - run: python -m pip install -r requirements.txt
-      - run: python main.py --token ${{ secrets.TOKEN }}
-      - name: Commit history file
-        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
-        with:
-          # The arguments for the `git add` command (see the paragraph below for more info)
-          # Default: '.'
-          add: "history.json"
-          author_name: Kaiser Bot
-          message: "Update history.json file"
+#name: Run Znachor Alert
+#on:
+#  schedule:
+#    - cron: 0 8 */4 * *
+#  workflow_dispatch:
+#jobs:
+#  znachor:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: checkout repo content
+#        uses: actions/checkout@v2 # checkout the repository content to github runner.
+#      - name: setup python
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: 3.11 #install the python needed
+#      - run: python -m pip install -r requirements.txt
+#      - run: python main.py --token ${{ secrets.TOKEN }}
+#      - name: Commit history file
+#        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+#        with:
+#          # The arguments for the `git add` command (see the paragraph below for more info)
+#          # Default: '.'
+#          add: "history.json"
+#          author_name: Kaiser Bot
+#          message: "Update history.json file"
