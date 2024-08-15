@@ -6,11 +6,6 @@ on:
 jobs:
  znachor:
    runs-on: ubuntu-latest
-   permissions:
-    repository-projects: write
-    security-events: write
-    contents: write
-    checks: write 
    steps:
      - name: checkout repo content
        uses: actions/checkout@v2 # checkout the repository content to github runner.
@@ -31,7 +26,7 @@ jobs:
          name: TOKEN 
          value: ${{ steps.get_secret_value.outputs.SECRET_VALUE }} 
          repository: ${{ github.repository }} 
-         token: ${{ secrets.GITHUB_TOKEN }}
+         token: ${{ secrets.PAT }}
      - name: Commit history file
        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
        with:
