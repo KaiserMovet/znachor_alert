@@ -18,11 +18,18 @@ jobs:
          python-version: 3.11 #install the python needed
      - run: python -m pip install -r requirements.txt
      - run: python main.py --token ${{ secrets.TOKEN }}
-     - run: |
-        SECRET_VALUE=$(cat secret.txt)
-        gh secret set TOKEN --body "$SECRET_VALUE"
-       env:
-        GH_TOKEN: ${{ github.token }}
+     - name: Get secret value from file
+       id: get_secret_value
+       run: |
+         SECRET_VALUE=$(cat secret.txt)
+         echo "::set-output name=SECRET_VALUE::$SECRET_VALUE"
+     - name: Set Action Secret
+       uses: hmanzur/actions-set-secret@v2.0.0
+       with:
+         name: TOKEN 
+         value: ${{ steps.get_secret_value.outputs.SECRET_VALUE }} 
+         repository: ${{ github.repository }} 
+         token: ${{ secrets.GITHUB_TOKEN }}
      - name: Commit history file
        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
        with:
