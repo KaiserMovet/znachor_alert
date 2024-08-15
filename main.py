@@ -4,9 +4,10 @@ import json
 from pprint import pprint
 from typing import List
 
+from pywykop3 import WykopAPI
+
 from app import EPG, Emission, Entry, Movie, TVParser
 from app.pictures import Pictures
-from app.pywykop3 import WykopAPI
 
 
 def get_wykop(token: str) -> WykopAPI:
@@ -19,9 +20,9 @@ def get_emmissions(movie: Movie) -> list[Emission]:
     return tv_parser.get_all_elements(movie)
 
 
-def add_wykop_entry(api, entry) -> None:
+def add_wykop_entry(api: WykopAPI, entry) -> None:
     # TODO add picture
-    res = api.post_entries(entry)
+    res = api.post_entry(entry)
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
@@ -59,8 +60,7 @@ def get_counter(increment=True) -> int:
 def get_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            f"Script will download data from {EPG.URL} "
-            "and post entry on Wykop.pl"
+            f"Script will download data from {EPG.URL} " "and post entry on Wykop.pl"
         )
     )
     parser.add_argument(
@@ -94,7 +94,9 @@ def main() -> None:
         print(msg)
         if not args.demo:
             api = get_wykop(args.token)
-            add_wykop_entry(api, msg)
+            # add_wykop_entry(api, msg)
+            with open("secret.txt", "w") as file:
+                file.write(api.connector.refresh_token)
     else:
         print("No future emmissions")
 

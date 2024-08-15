@@ -1,3 +1,3 @@
 requests
 pytz
-wykop-sdk-reborn
+pywykop3==0.7.0
