@@ -7,4 +7,3 @@
 This script retrieves data from https://epg.ovh/, searches for the broadcast of the movie "Znachor", and then shares this data on [Wykop.pl](https://www.wykop.pl/tag/znachoralert/)
 
 
-BOT IS TURNED OFF DUE TO CHANGES IN AUTHORIZATION METHOIDS IN WYKOP API
