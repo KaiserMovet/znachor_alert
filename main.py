@@ -20,9 +20,9 @@ def get_emmissions(movie: Movie) -> list[Emission]:
     return tv_parser.get_all_elements(movie)
 
 
-def add_wykop_entry(api, entry) -> None:
+def add_wykop_entry(api: WykopAPI, entry) -> None:
     # TODO add picture
-    res = api.post_entries(entry)
+    res = api.post_entry(entry)
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
@@ -94,7 +94,7 @@ def main() -> None:
         print(msg)
         if not args.demo:
             api = get_wykop(args.token)
-            add_wykop_entry(api, msg)
+            # add_wykop_entry(api, msg)
             with open("secret.txt", "w") as file:
                 file.write(api.connector.refresh_token)
     else:
