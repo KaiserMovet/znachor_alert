@@ -9,6 +9,8 @@ jobs:
    permissions:
     repository-projects: write
     security-events: write
+    contents: write
+    checks: write 
    steps:
      - name: checkout repo content
        uses: actions/checkout@v2 # checkout the repository content to github runner.
