@@ -35,3 +35,4 @@ jobs:
          add: "history.json"
          author_name: Kaiser Bot
          message: "Update history.json file"
+
