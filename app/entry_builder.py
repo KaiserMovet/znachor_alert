@@ -34,7 +34,7 @@ class Entry:
             "(zła godzina, coś zostało pominięte, etc.) "
             "dawajcie znać w komentarzach albo pw. Dzięki\n"
             "https://github.com/KaiserMovet/znachor_alert\n"
-            # "#znachor #znachoralert" # TODO remove this
+            "#znachor #znachoralert"
         )
 
     @property
