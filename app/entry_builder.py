@@ -52,7 +52,7 @@ class Entry:
         inner_msg = random.choice(
             [
                 "Twój stary dowie się, że to jest profesor Rafał Wilczór",
-                "Sonia zostanie odrzucona",
+                "Sonia dostanie kosza od typa z amnezją",
                 "Leszek wyjebie się na motorze",
                 "Kosiba połamie Norkowi nogi",
                 "Norek zatańczy dla czterdziestolatka",
@@ -62,6 +62,8 @@ class Entry:
                 "żona zostawi Wilczura",
                 "Wilczór pójdzie w srogi melanż",
                 "Kosiba powie, że od bab wszelkie zło na świecie",
+                "chad Leszek obezwładni i wykąpie menela",
+                "dorosły chłop będzie szpanował, że umie chodzić",
             ]
         )
         entry = ""

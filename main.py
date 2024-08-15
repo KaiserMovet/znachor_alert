@@ -1,6 +1,7 @@
 import argparse
 import datetime
 import json
+import random
 from pprint import pprint
 from typing import List
 
@@ -21,8 +22,14 @@ def get_emmissions(movie: Movie) -> list[Emission]:
 
 
 def add_wykop_entry(api: WykopAPI, entry) -> None:
-    # TODO add picture
-    res = api.post_entry(entry)
+    photos = [
+        "BwgVL0qM78zX2rZE134lYoaXpON6GNROvPnbQAWJamy6x9ed5D",
+        "AXvwaN4mJeDVMWOZkzgYBokJAR7VGyn0916Rx5b7dq2lpPL8Qr",
+        "8BAYbzlEea93RL2VrMy6dj1nAeyWGXvmpq05n4DO7ZNxgJwQkP",
+        "XWgv4DMRam7LyPqpxAO2zo9J5gy3K9QBwEVYdNr1l3086bnkJZ",
+        "VPq197R6zlBmJXW3Q5OZwGNpDEJRKekALav04rdpYDxyNEg8b2",
+    ]
+    res = api.post_entry(entry, random.choice(photos))
     print(f"Created entry: https://www.wykop.pl/wpis/{res.get('id')}")
 
 
@@ -82,6 +89,7 @@ def get_args() -> argparse.Namespace:
 
 
 def main() -> None:
+
     movie = Movie("Znachor", datetime.timedelta(hours=2, minutes=8), year=1981)
     args = get_args()
     em = get_emmissions(movie)
@@ -94,7 +102,7 @@ def main() -> None:
         print(msg)
         if not args.demo:
             api = get_wykop(args.token)
-            # add_wykop_entry(api, msg)
+            add_wykop_entry(api, msg)
             with open("secret.txt", "w") as file:
                 file.write(api.connector.refresh_token)
     else:
