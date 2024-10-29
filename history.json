@@ -1693,7 +1693,42 @@
             "start": 1730033700.0,
             "stop": 1730043900.0,
             "id": 2083171003861853364
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1730326500.0,
+            "stop": 1730337300.0,
+            "id": 1609032689131001672
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1730401200.0,
+            "stop": 1730410500.0,
+            "id": 776482807954009400
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1730460600.0,
+            "stop": 1730469900.0,
+            "id": 65309326094776351
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1730479800.0,
+            "stop": 1730489100.0,
+            "id": 464757701768598265
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1730564400.0,
+            "stop": 1730574000.0,
+            "id": 1143700405960527759
         }
     ],
-    "counter": 110
+    "counter": 111
 }
