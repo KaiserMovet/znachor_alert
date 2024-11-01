@@ -1724,11 +1724,25 @@
         },
         {
             "title": "Znachor",
+            "channel": "TVC",
+            "start": 1730487600.0,
+            "stop": 1730496600.0,
+            "id": 1516773888133624515
+        },
+        {
+            "title": "Znachor",
             "channel": "FILMAX",
             "start": 1730564400.0,
             "stop": 1730574000.0,
             "id": 1143700405960527759
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1730565000.0,
+            "stop": 1730574000.0,
+            "id": 985440889855379833
         }
     ],
-    "counter": 111
+    "counter": 112
 }
