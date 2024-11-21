@@ -1784,7 +1784,21 @@
             "start": 1731840600.0,
             "stop": 1731850800.0,
             "id": 2137246244338225072
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1732317600.0,
+            "stop": 1732325700.0,
+            "id": 495447867210575855
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1732445700.0,
+            "stop": 1732454400.0,
+            "id": 570712108603176046
         }
     ],
-    "counter": 116
+    "counter": 117
 }
