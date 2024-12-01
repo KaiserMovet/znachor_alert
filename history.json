@@ -1802,10 +1802,17 @@
         {
             "title": "Znachor",
             "channel": "TVC",
+            "start": 1733079600.0,
+            "stop": 1733088900.0,
+            "id": 607270464517668265
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
             "start": 1733079900.0,
             "stop": 1733089200.0,
             "id": 1532110326082044993
         }
     ],
-    "counter": 118
+    "counter": 119
 }
