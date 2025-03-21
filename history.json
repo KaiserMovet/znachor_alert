@@ -2008,7 +2008,28 @@
             "start": 1742587500.0,
             "stop": 1742595900.0,
             "id": 181410376806725440
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1742661000.0,
+            "stop": 1742670000.0,
+            "id": 1787023327791857794
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1742681100.0,
+            "stop": 1742689800.0,
+            "id": 1898088845247700588
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1742729700.0,
+            "stop": 1742739600.0,
+            "id": 1846546802573940294
         }
     ],
-    "counter": 135
+    "counter": 136
 }
