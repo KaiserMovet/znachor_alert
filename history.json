@@ -2040,10 +2040,24 @@
         {
             "title": "Znachor",
             "channel": "Kino Polska",
+            "start": 1743237900.0,
+            "stop": 1743248400.0,
+            "id": 1146866315032622843
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
             "start": 1743241500.0,
             "stop": 1743252000.0,
             "id": 1870782985654930841
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1743944100.0,
+            "stop": 1743954600.0,
+            "id": 75392730399741837
         }
     ],
-    "counter": 138
+    "counter": 139
 }
