@@ -2064,7 +2064,35 @@
             "start": 1744451400.0,
             "stop": 1744461900.0,
             "id": 1313456203160204507
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1744999200.0,
+            "stop": 1745008800.0,
+            "id": 74855190291195129
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1745224800.0,
+            "stop": 1745235000.0,
+            "id": 2109419191951416708
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1745234700.0,
+            "stop": 1745243400.0,
+            "id": 405762981152383380
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1745248800.0,
+            "stop": 1745258280.0,
+            "id": 2304956210520999780
         }
     ],
-    "counter": 140
+    "counter": 141
 }
