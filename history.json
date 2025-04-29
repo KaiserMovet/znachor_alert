@@ -2103,6 +2103,13 @@
         {
             "title": "Znachor",
             "channel": "ZOOM TV",
+            "start": 1745625900.0,
+            "stop": 1745635200.0,
+            "id": 1438454548774842945
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
             "start": 1745681100.0,
             "stop": 1745690400.0,
             "id": 496118785746877530
@@ -2120,7 +2127,42 @@
             "start": 1745758200.0,
             "stop": 1745768100.0,
             "id": 1705268666473742245
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1746122400.0,
+            "stop": 1746131700.0,
+            "id": 595861148462121709
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1746122400.0,
+            "stop": 1746132600.0,
+            "id": 208362214336843709
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1746181500.0,
+            "stop": 1746190500.0,
+            "id": 661839373696992020
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1746212700.0,
+            "stop": 1746221100.0,
+            "id": 279885636023643100
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia 2",
+            "start": 1746213000.0,
+            "stop": 1746220500.0,
+            "id": 1145976837797126945
         }
     ],
-    "counter": 143
+    "counter": 144
 }
