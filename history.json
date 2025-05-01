@@ -2162,7 +2162,28 @@
             "start": 1746213000.0,
             "stop": 1746220500.0,
             "id": 1145976837797126945
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia 2",
+            "start": 1746360600.0,
+            "stop": 1746368100.0,
+            "id": 1602734137743183282
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1746371400.0,
+            "stop": 1746381600.0,
+            "id": 1166586775974334021
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1746371400.0,
+            "stop": 1746381600.0,
+            "id": 573673376911520733
         }
     ],
-    "counter": 144
+    "counter": 145
 }
