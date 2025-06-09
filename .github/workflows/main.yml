@@ -15,12 +15,22 @@ jobs:
          python-version: 3.11 #install the python needed
      - run: python -m pip install -r requirements.txt
      - run: python main.py --token ${{ secrets.TOKEN }}
+     - name: Check if secret.txt exists
+       id: check_secret
+       run: |
+         if [ -f secret.txt ]; then
+           echo "exists=true" >> $GITHUB_OUTPUT
+         else
+           echo "exists=false" >> $GITHUB_OUTPUT
+         fi
      - name: Get secret value from file
        id: get_secret_value
+       if: steps.check_secret.outputs.exists == 'true'
        run: |
          SECRET_VALUE=$(cat secret.txt)
          echo "::set-output name=SECRET_VALUE::$SECRET_VALUE"
      - name: Set Action Secret
+       if: steps.check_secret.outputs.exists == 'true'
        uses: hmanzur/actions-set-secret@v2.0.0
        with:
          name: TOKEN 
@@ -28,6 +38,7 @@ jobs:
          repository: ${{ github.repository }} 
          token: ${{ secrets.PAT }}
      - name: Commit history file
+       if: steps.check_secret.outputs.exists == 'true'
        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
        with:
          # The arguments for the `git add` command (see the paragraph below for more info)
