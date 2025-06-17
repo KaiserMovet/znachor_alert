@@ -2232,7 +2232,42 @@
             "start": 1749899400.0,
             "stop": 1749909600.0,
             "id": 639577572924775942
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1750273200.0,
+            "stop": 1750282500.0,
+            "id": 2152320798195507902
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1750332300.0,
+            "stop": 1750341900.0,
+            "id": 1916397919255315887
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1750346700.0,
+            "stop": 1750355700.0,
+            "id": 741415617808655001
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1750373100.0,
+            "stop": 1750381800.0,
+            "id": 636687884897193310
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1750399500.0,
+            "stop": 1750407900.0,
+            "id": 2298232202001134218
         }
     ],
-    "counter": 151
+    "counter": 152
 }
