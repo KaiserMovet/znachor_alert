@@ -2316,7 +2316,63 @@
             "start": 1754147700.0,
             "stop": 1754157600.0,
             "id": 1084994362728776557
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1755194400.0,
+            "stop": 1755203700.0,
+            "id": 2252877186325508845
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1755236100.0,
+            "stop": 1755246600.0,
+            "id": 9341179888410342
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1755252900.0,
+            "stop": 1755261600.0,
+            "id": 1676769039577595668
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1755270600.0,
+            "stop": 1755280800.0,
+            "id": 1210363829668920487
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1755338400.0,
+            "stop": 1755349200.0,
+            "id": 2105101911695265757
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1755373800.0,
+            "stop": 1755383400.0,
+            "id": 955349875587506808
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1755453600.0,
+            "stop": 1755463800.0,
+            "id": 1422178229701409600
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP HD",
+            "start": 1755458700.0,
+            "stop": 1755467100.0,
+            "id": 948382760687755980
         }
     ],
-    "counter": 158
+    "counter": 159
 }
