@@ -2421,7 +2421,21 @@
             "start": 1757534400.0,
             "stop": 1757541300.0,
             "id": 1842026913555234460
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kultura 2",
+            "start": 1757766600.0,
+            "stop": 1757774400.0,
+            "id": 804263517949041973
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kultura",
+            "start": 1757766900.0,
+            "stop": 1757775300.0,
+            "id": 1682336429898085514
         }
     ],
-    "counter": 164
+    "counter": 165
 }
