@@ -2438,11 +2438,25 @@
         },
         {
             "title": "Znachor",
+            "channel": "TVP Kultura 2",
+            "start": 1757766900.0,
+            "stop": 1757774700.0,
+            "id": 706983841845530908
+        },
+        {
+            "title": "Znachor",
             "channel": "TVP Seriale",
             "start": 1758320700.0,
             "stop": 1758329400.0,
             "id": 1100864014420287956
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1758447600.0,
+            "stop": 1758456600.0,
+            "id": 1347992439549558513
         }
     ],
-    "counter": 166
+    "counter": 167
 }
