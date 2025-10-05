@@ -2467,10 +2467,45 @@
         {
             "title": "Znachor",
             "channel": "Antena",
+            "start": 1758925500.0,
+            "stop": 1758935700.0,
+            "id": 110273254622536639
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
             "start": 1758925800.0,
             "stop": 1758935700.0,
             "id": 1125522374256705156
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1759669500.0,
+            "stop": 1759679400.0,
+            "id": 829763599078861727
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1759677300.0,
+            "stop": 1759686900.0,
+            "id": 2124699222247298747
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP HD",
+            "start": 1759692300.0,
+            "stop": 1759701000.0,
+            "id": 179609379997801411
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP HD",
+            "start": 1759784700.0,
+            "stop": 1759793100.0,
+            "id": 256957217677946439
         }
     ],
-    "counter": 168
+    "counter": 169
 }
