@@ -2515,11 +2515,25 @@
         },
         {
             "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1760196600.0,
+            "stop": 1760205600.0,
+            "id": 1310415870731490431
+        },
+        {
+            "title": "Znachor",
             "channel": "Kino TV",
             "start": 1760258400.0,
             "stop": 1760268300.0,
             "id": 1766043878180788266
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1760560200.0,
+            "stop": 1760568900.0,
+            "id": 1978811491786939440
         }
     ],
-    "counter": 170
+    "counter": 171
 }
