@@ -2561,7 +2561,49 @@
             "start": 1761475500.0,
             "stop": 1761484200.0,
             "id": 1442724278634732082
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1761937200.0,
+            "stop": 1761946800.0,
+            "id": 832387925521980672
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1761962400.0,
+            "stop": 1761972300.0,
+            "id": 1276060190887599070
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1761985200.0,
+            "stop": 1761993600.0,
+            "id": 870115113451413236
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1762005300.0,
+            "stop": 1762015800.0,
+            "id": 1479851854635097003
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP 1",
+            "start": 1762087200.0,
+            "stop": 1762095900.0,
+            "id": 1054226426979879640
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1762110000.0,
+            "stop": 1762119600.0,
+            "id": 1912730285971282525
         }
     ],
-    "counter": 173
+    "counter": 174
 }
