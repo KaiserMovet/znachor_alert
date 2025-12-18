@@ -2,6 +2,12 @@ name: Run Znachor Alert
 on:
  schedule:
    - cron: 0 8 */4 * *
+   # 23 grudnia (23 dzień, 12 miesiąc)
+   - cron: '0 8 23 12 *' 
+   # 30 kwietnia (30 dzień, 4 miesiąc)
+   - cron: '0 8 30 4 *' 
+   # 31 października (31 dzień, 10 miesiąc)
+   - cron: '0 8 31 10 *'
  workflow_dispatch:
 jobs:
  znachor:
