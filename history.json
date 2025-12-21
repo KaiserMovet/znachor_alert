@@ -2687,7 +2687,42 @@
             "start": 1766258700.0,
             "stop": 1766268000.0,
             "id": 1392031419670589376
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Polonia",
+            "start": 1766455500.0,
+            "stop": 1766463600.0,
+            "id": 632210935857420430
+        },
+        {
+            "title": "Znachor",
+            "channel": "Polonia 1",
+            "start": 1766575200.0,
+            "stop": 1766584800.0,
+            "id": 1962407862266276912
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1766584800.0,
+            "stop": 1766593800.0,
+            "id": 1179018762908190985
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1766586000.0,
+            "stop": 1766595300.0,
+            "id": 1740679370494360948
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1766602800.0,
+            "stop": 1766612400.0,
+            "id": 289609219371568273
         }
     ],
-    "counter": 185
+    "counter": 186
 }
