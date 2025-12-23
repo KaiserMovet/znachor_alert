@@ -2722,7 +2722,49 @@
             "start": 1766602800.0,
             "stop": 1766612400.0,
             "id": 289609219371568273
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1766672700.0,
+            "stop": 1766681400.0,
+            "id": 1187343397759953963
+        },
+        {
+            "title": "Znachor",
+            "channel": "Antena",
+            "start": 1766702400.0,
+            "stop": 1766712000.0,
+            "id": 2276444021306027936
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1766729100.0,
+            "stop": 1766737500.0,
+            "id": 1036393668784989303
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1766753400.0,
+            "stop": 1766762400.0,
+            "id": 282424507764112612
+        },
+        {
+            "title": "Znachor",
+            "channel": "FILMAX",
+            "start": 1766765700.0,
+            "stop": 1766775600.0,
+            "id": 1761903736448334136
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1766767800.0,
+            "stop": 1766777400.0,
+            "id": 2087785262243190545
         }
     ],
-    "counter": 186
+    "counter": 187
 }
