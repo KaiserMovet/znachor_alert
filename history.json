@@ -3205,7 +3205,28 @@
             "start": 1776715200.0,
             "stop": 1776725100.0,
             "id": 284703030598825156
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1777727100.0,
+            "stop": 1777737600.0,
+            "id": 2066281319893130246
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1777813200.0,
+            "stop": 1777823100.0,
+            "id": 1406430578570378445
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Historia",
+            "start": 1777818300.0,
+            "stop": 1777826100.0,
+            "id": 634582670134070253
         }
     ],
-    "counter": 210
+    "counter": 211
 }
