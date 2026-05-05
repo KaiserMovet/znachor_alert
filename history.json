@@ -3240,7 +3240,21 @@
             "start": 1777917600.0,
             "stop": 1777927500.0,
             "id": 154841966657709248
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1778320800.0,
+            "stop": 1778331300.0,
+            "id": 920173561196803409
+        },
+        {
+            "title": "Znachor",
+            "channel": "Polonia 1",
+            "start": 1778326800.0,
+            "stop": 1778331900.0,
+            "id": 855715770383081524
         }
     ],
-    "counter": 213
+    "counter": 214
 }
