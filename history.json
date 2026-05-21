@@ -3268,7 +3268,49 @@
             "start": 1779031200.0,
             "stop": 1779040800.0,
             "id": 307194015485617261
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1779451200.0,
+            "stop": 1779461100.0,
+            "id": 6966869150007719
+        },
+        {
+            "title": "Znachor",
+            "channel": "Polonia 1",
+            "start": 1779529500.0,
+            "stop": 1779534300.0,
+            "id": 1886168145000606059
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino TV",
+            "start": 1779540600.0,
+            "stop": 1779550800.0,
+            "id": 1585868123982964428
+        },
+        {
+            "title": "Znachor",
+            "channel": "Polonia 1",
+            "start": 1779612300.0,
+            "stop": 1779616800.0,
+            "id": 1039471608263788836
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1779702600.0,
+            "stop": 1779713400.0,
+            "id": 1947616821152770107
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1779714000.0,
+            "stop": 1779719100.0,
+            "id": 1899060447968657337
         }
     ],
-    "counter": 217
+    "counter": 218
 }
