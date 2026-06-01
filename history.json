@@ -3338,7 +3338,35 @@
             "start": 1780225200.0,
             "stop": 1780235100.0,
             "id": 2245198100689027601
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Seriale",
+            "start": 1780560900.0,
+            "stop": 1780569000.0,
+            "id": 167781198289266356
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1780574400.0,
+            "stop": 1780584300.0,
+            "id": 1002571650266378859
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVC",
+            "start": 1780596000.0,
+            "stop": 1780605300.0,
+            "id": 1292499896956137581
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Polonia",
+            "start": 1780599300.0,
+            "stop": 1780607700.0,
+            "id": 787281527769200564
         }
     ],
-    "counter": 220
+    "counter": 221
 }
