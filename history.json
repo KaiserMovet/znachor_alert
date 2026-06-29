@@ -3447,6 +3447,13 @@
         {
             "title": "Znachor",
             "channel": "NOVELA TV",
+            "start": 1782151200.0,
+            "stop": 1782161100.0,
+            "id": 1192074788463867685
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
             "start": 1782223800.0,
             "stop": 1782233400.0,
             "id": 1869151857480919168
@@ -3520,7 +3527,35 @@
             "start": 1782646800.0,
             "stop": 1782656400.0,
             "id": 664711592140789695
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1782776400.0,
+            "stop": 1782785700.0,
+            "id": 97186417349671349
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1782812700.0,
+            "stop": 1782822000.0,
+            "id": 599880003067145279
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1782822900.0,
+            "stop": 1782832800.0,
+            "id": 67877523712341227
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVN Fabu\u0142a",
+            "start": 1782936000.0,
+            "stop": 1782945900.0,
+            "id": 488243040608609302
         }
     ],
-    "counter": 225
+    "counter": 226
 }
