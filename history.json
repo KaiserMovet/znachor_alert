@@ -3555,7 +3555,35 @@
             "start": 1782936000.0,
             "stop": 1782945900.0,
             "id": 488243040608609302
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1783879200.0,
+            "stop": 1783888800.0,
+            "id": 680633963034513664
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1784380800.0,
+            "stop": 1784390400.0,
+            "id": 454961471758635143
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kultura",
+            "start": 1784461500.0,
+            "stop": 1784470200.0,
+            "id": 337980466503825332
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kultura",
+            "start": 1784552700.0,
+            "stop": 1784561400.0,
+            "id": 887183719873413741
         }
     ],
-    "counter": 227
+    "counter": 228
 }
