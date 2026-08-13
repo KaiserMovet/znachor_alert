@@ -3723,7 +3723,42 @@
             "start": 1786543200.0,
             "stop": 1786553100.0,
             "id": 73780711183713973
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1786577400.0,
+            "stop": 1786587000.0,
+            "id": 1970721389380472396
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1786730100.0,
+            "stop": 1786740000.0,
+            "id": 1139862224083216465
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1786792200.0,
+            "stop": 1786801800.0,
+            "id": 1287312320779030996
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1786815000.0,
+            "stop": 1786823700.0,
+            "id": 1054706058388952207
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVP Kobieta",
+            "start": 1786916700.0,
+            "stop": 1786925100.0,
+            "id": 1112766935176862552
         }
     ],
-    "counter": 234
+    "counter": 235
 }
