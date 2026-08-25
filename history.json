@@ -3856,7 +3856,42 @@
             "start": 1787595300.0,
             "stop": 1787604600.0,
             "id": 2110087711765247466
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1787829600.0,
+            "stop": 1787839200.0,
+            "id": 1877140585651460545
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1787838000.0,
+            "stop": 1787842800.0,
+            "id": 1582723616266009362
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1787896800.0,
+            "stop": 1787906400.0,
+            "id": 194787337099449214
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1787924400.0,
+            "stop": 1787929200.0,
+            "id": 905403537389833162
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1787953500.0,
+            "stop": 1787962800.0,
+            "id": 1150896454305941812
         }
     ],
-    "counter": 237
+    "counter": 238
 }
