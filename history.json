@@ -3975,7 +3975,28 @@
             "start": 1788698400.0,
             "stop": 1788709200.0,
             "id": 1840786178658356552
+        },
+        {
+            "title": "Znachor",
+            "channel": "Kino Polska",
+            "start": 1789112700.0,
+            "stop": 1789122900.0,
+            "id": 2159942118583004372
+        },
+        {
+            "title": "Znachor",
+            "channel": "NOVELA TV",
+            "start": 1789308000.0,
+            "stop": 1789317600.0,
+            "id": 1880870540762609463
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1789310400.0,
+            "stop": 1789320600.0,
+            "id": 866704696542610602
         }
     ],
-    "counter": 241
+    "counter": 242
 }
