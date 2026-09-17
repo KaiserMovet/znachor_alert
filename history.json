@@ -4010,7 +4010,42 @@
             "start": 1789653600.0,
             "stop": 1789663200.0,
             "id": 1863683808734503542
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVT",
+            "start": 1789754400.0,
+            "stop": 1789762800.0,
+            "id": 2231050189100186241
+        },
+        {
+            "title": "Znachor",
+            "channel": "ZOOM TV",
+            "start": 1789841700.0,
+            "stop": 1789851600.0,
+            "id": 632519282279495050
+        },
+        {
+            "title": "Znachor",
+            "channel": "Tele 5",
+            "start": 1789902000.0,
+            "stop": 1789911900.0,
+            "id": 1636558271554993559
+        },
+        {
+            "title": "Znachor",
+            "channel": "Stopklatka TV",
+            "start": 1789917600.0,
+            "stop": 1789927200.0,
+            "id": 1709547393664554786
+        },
+        {
+            "title": "Znachor",
+            "channel": "TVT",
+            "start": 1790013600.0,
+            "stop": 1790022000.0,
+            "id": 549670410749189895
         }
     ],
-    "counter": 243
+    "counter": 244
 }
